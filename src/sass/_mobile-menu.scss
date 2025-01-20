@@ -1,0 +1,92 @@
+@use './vars' as *;
+
+
+.mob-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+   opacity: 0;
+  transform: translateX(100%);
+  background-color: $mobMenuBgColor;
+    transition: opacity $transition, transform $transition;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 254px;
+  }
+}
+
+.mob-menu-container.is-open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mob-close-btn {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  background-color: transparent;
+  stroke: $whiteColor;
+  transition: background-color $transition;
+
+  &:hover {
+    stroke: $darkRed;
+  }
+}
+
+
+
+.mob-buy-btn {
+
+  gap: 15px;
+  margin: 0 auto;
+  width: 209px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  border-radius: 22px;
+  background-color: $whiteColor;
+  color: $darkRed;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $btnBgHover;
+  }
+}
+
+.vector-icon {
+  width: 5px;
+  height: 8px;
+  stroke: $darkRed;
+  fill: transparent;
+}
+
+.mob-list {
+  margin-top: 19px;
+}
+
+.mob-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e18298;
+
+  &:nth-child(1) {
+    border-top: 1px solid #e18298;
+  }
+}
+
+.mob-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $whiteColor;
+  transition: color $transition;
+
+  &:hover {
+    color: $darkRed;
+  }
+}

@@ -1,0 +1,98 @@
+@use './vars' as *;
+
+.hero {
+  height: 502px;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  background-color: $pinkBgColor;
+    background-image: url(../images/hero/hero-bg-pink-mob-1x.png);
+
+    background-repeat: no-repeat;
+    background-position: right;
+  
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  
+  background-image: url(../images/hero/hero-bg-icecream-mob-1x.png);
+  background-repeat: no-repeat;
+  height: 410px;
+  width: 171px;
+    position: absolute;
+    top: 92px;
+    right: 25px;
+  
+}
+
+.hero-content{
+    position: absolute;
+    z-index: 1;
+}
+.hero-title {
+  width: 218px;
+  margin-bottom: 19px;
+  font-family: $secondaryFontFamily;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  color: $whiteColor;
+  
+}
+
+.title-accent {
+  font-family: $secondaryFontFamily;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: $darkRed;
+}
+
+.hero-products-btn {
+  margin-right: 9px;
+  width: 62px;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.2;
+  color: $whiteColor;
+  background-color: $darkRed;
+  border-radius: 20px;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    color: $accentRed;
+  }
+}
+
+.hero-about-btn {
+  width: 83px;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.2;
+  color: $darkRed;
+  background-color: $whiteColor;
+  border-radius: 20px;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    color: $btnBgHover;
+  }
+}
+
+.hero-text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.amount-wrapper {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

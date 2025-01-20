@@ -1,2 +1,14 @@
-@import './common';
-@import './example';
+@use './vars' as *;
+@use './reset' as *;
+@use './common' as *;
+@use './header' as *;
+@use './mobile-menu' as *;
+@use './hero' as *;
+@use './products' as *;
+@use './about' as *;
+@use './gallery' as *;
+@use './reviews' as *;
+@use './contacts' as *;
+@use './footer' as *;
+@use './modal' as *;
+

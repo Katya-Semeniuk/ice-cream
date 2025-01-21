@@ -1,1 +1,112 @@
 @use './vars' as *;
+
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.products-subtitle {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: $darkTitlePink;
+}
+
+.products-title {
+  margin-bottom: 144px;
+  color: $darkRed;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1.36px;
+  text-transform: uppercase;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+}
+
+.products-item {
+  padding-top: 161px;
+  position: relative;
+  width: 280px;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 24px;
+
+  &:nth-child(1) {
+    background-color: $pinkBgColor;
+  }
+   &:nth-child(2) {
+    background-color: $orangeBgColor;
+  }
+  &:nth-child(3) {
+    background-color: $greenBgColor;
+  }
+
+  // Псевдоелемент для фонової картинки
+  &::before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 249px;
+    height: 252px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url(../images/products/products1-mob-1x.png);
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../images/products/products2-mob-1x.png);
+  }
+
+  &:nth-child(3)::before {
+    background-image: url(../images/products/products3-mob-1x.png);
+  }
+}
+
+.products-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+
+.products-icon {
+  fill: $whiteColor;
+}
+
+.products-text {
+  width: 200px;
+  //   margin-bottom: 62px;
+  color: $whiteColor;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.56px;
+}
+
+.products-btn {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url(../images/arrow-right.png);
+}

@@ -1,17 +1,9 @@
 @use './vars' as *;
 
 .header {
-  // padding: 6px 20px 27px 20px;
-  // background-color: $pinkBgColor;
-
-  // @media screen and (min-width: 768px) {
-  //       padding-top: 37px;
-  //   }
-
-  position: fixed;
-   top: 6px;
+  position: absolute;
+  top: 6px;
   width: 100%;
- 
 }
 
 .header-container {

@@ -1,1 +1,100 @@
 @use './vars' as *;
+
+.about {
+  padding-top: 125px;
+  background-color: #fff5f6;
+  
+}
+
+.about-img{
+    width: 280px;
+    height: 279px;
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-subtitle {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: $secondaryFontFamily;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $darkTitlePink;
+}
+
+.about-title {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  color: $darkRed;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1.36px;
+  text-transform: uppercase;
+
+ 
+}
+.wrapper-text{
+    position: relative;
+    margin-top: 46px;
+    margin-bottom: 17px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-text {
+    margin-bottom: 46px;
+  width: 220px;
+  color: $mainTextColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.about-bg-box {
+  height: 133px;
+  background-image: url(../images/about/about2-bg-mob-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.about-desc {
+  width: 220px;
+  color: $secondaryTextColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+ 
+}
+
+.about-btn-read{
+    display: block;
+   margin-left: 50px;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.2;
+width: 176px;
+height: 44px;
+border-radius: 22px;
+ color: $darkRed;
+
+ transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    color: $btnBgHover;
+  }
+}
+
+.about-btn-icon {
+  width: 5px;
+  height: 8px;
+  stroke: $darkRed;
+  fill: transparent;
+}

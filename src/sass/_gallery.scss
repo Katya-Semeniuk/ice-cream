@@ -1,1 +1,10 @@
 @use './vars' as *;
+
+
+.gallery{
+    height: 122px;
+    background-image: url(../images/gallery/gallery-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}

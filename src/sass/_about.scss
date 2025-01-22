@@ -2,6 +2,7 @@
 
 .about {
   padding-top: 125px;
+  padding-bottom: 97px;
   background-color: #fff5f6;
 }
 
@@ -53,13 +54,6 @@
   line-height: 1.5;
 }
 
-// .about-bg-box {
-//   height: 133px;
-//   background-image: url(../images/about/about2-bg-mob-1x.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: bottom;
-// }
 
 .about-desc {
   width: 220px;
@@ -93,6 +87,11 @@
   height: 8px;
   stroke: $darkRed;
   fill: transparent;
+}
+
+
+.about-item:not(:last-child){
+  margin-bottom: 38px;
 }
 
 .about-item-number {

@@ -1,2 +1,148 @@
 @use './vars' as *;
 
+.contacts {
+  padding-top: 86px;
+  padding-bottom: 113px;
+  background-color: #fff5f6;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 54px;
+}
+
+.contacts-item {
+  max-width: 220px;
+  padding: 43px 20px;
+  border-radius: 24px;
+  background-color: $whiteColor;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+}
+
+.contacts-subtitle {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  color: $whiteColor;
+}
+
+.orange-bg {
+  background-color: $orangeBgColor;
+}
+
+.green-bg {
+  background-color: $greenBgColor;
+}
+
+
+.contacts-city {
+    font-family: $mainFontFamily;
+  margin-bottom: 10px;
+  color: $mainTextColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8; 
+  letter-spacing: 0.48px;
+}
+
+.contacts-desc{
+color: $secondaryTextColor;
+font-size: 12px;
+font-weight: 500;
+line-height: 1.5;
+}
+
+.box-works{
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+
+   &::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $sectionBgColor;
+}
+
+  &::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $sectionBgColor;
+}
+}
+
+.contacts-days{
+  font-family: $mainFontFamily;
+color: $mainTextColor;
+font-size: 12px;
+font-weight: 500;
+line-height: 1.8;
+}
+
+
+.contacts-hours{
+  color: $darkTitlePink;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.8;
+}
+
+.mr-bottom{
+  margin-bottom: 10px;
+}
+
+
+.address-link{
+  color: $secondaryTextColor;
+font-size: 12px;
+font-weight: 500;
+line-height: 1.5;
+}
+
+.btn-wrapper{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+
+.contacts-location-btn,
+.contacts-franchise-btn {
+  width: 162;
+  height: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  border-radius: 22px;
+}
+
+.contacts-location-btn {
+  background-color: $darkRed;
+  color: $whiteColor;
+}
+
+.contacts-franchise-btn {
+  color: $darkRed;
+  background-color: $whiteColor;
+  transition: color $transition;
+
+  &:hover {
+    background-color: $btnBgHover;
+  }
+}

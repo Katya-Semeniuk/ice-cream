@@ -3,12 +3,17 @@
 .hero {
   height: 502px;
   padding-top: 193px;
-  padding-bottom: 160px;
   background-color: $pinkBgColor;
     background-image: url(../images/hero/hero-bg-pink-mob-1x.png);
-
     background-repeat: no-repeat;
     background-position: right;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 102px;
+       background-image: url(../images/hero/hero-bg-pink-tab.png);
+       background-position-x: 64%;
+       background-position-y: 15%;
+    }
   
 }
 

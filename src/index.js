@@ -7,6 +7,7 @@
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    openMenuBtn.classList.toggle('visually-hidden');
     mobileMenu.classList.toggle('is-open');
 
     const scrollLockMethod = !isMenuOpen

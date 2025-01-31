@@ -3,9 +3,20 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 .products-subtitle {
+  font-family: $secondaryFontFamily;
   margin-bottom: 15px;
   text-align: center;
   font-size: 18px;
@@ -13,17 +24,35 @@
   line-height: 1.6;
   text-transform: uppercase;
   color: $darkTitlePink;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .products-title {
   margin-bottom: 144px;
-  color: $darkRed;
   text-align: center;
   font-size: 34px;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 1.36px;
   text-transform: uppercase;
+  color: $darkRed;
+  @media screen and (min-width: bp-tablet) {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+    margin-bottom: 149px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 58px;
+    letter-spacing: 3.48px;
+    margin-bottom: 154px;
+  }
 }
 
 .products-list {
@@ -31,23 +60,46 @@
   flex-direction: column;
   align-items: center;
   gap: 130px;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .products-item {
   padding-top: 161px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
-  width: 280px;
-  height: 485px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   border-radius: 24px;
 
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 220px;
+    padding-top: 152px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 329px;
+    padding-top: 163px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 50px;
+  }
+
   &:nth-child(1) {
     background-color: $pinkBgColor;
   }
-   &:nth-child(2) {
+  &:nth-child(2) {
     background-color: $orangeBgColor;
   }
   &:nth-child(3) {
@@ -63,18 +115,34 @@
     height: 252px;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 220px;
+    }
   }
 
   &:nth-child(1)::before {
     background-image: url(../images/products/products1-mob-1x.png);
+    @media screen and (min-width: $bp-tablet) {
+      height: 226px;
+      background-image: url(../images/products/products1-tab-1x.png);
+    }
   }
 
   &:nth-child(2)::before {
     background-image: url(../images/products/products2-mob-1x.png);
+    @media screen and (min-width: $bp-tablet) {
+      height: 233px;
+      background-image: url(../images/products/products2-tab-1x.png);
+    }
   }
 
   &:nth-child(3)::before {
     background-image: url(../images/products/products3-mob-1x.png);
+    @media screen and (min-width: $bp-tablet) {
+      height: 224px;
+      background-image: url(../images/products/products3-tab-1x.png);
+    }
   }
 }
 
@@ -93,14 +161,20 @@
 }
 
 .products-text {
-  width: 200px;
-
   color: $whiteColor;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.56px;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .products-btn {
@@ -110,4 +184,3 @@
   cursor: pointer;
   background-image: url(../images/arrow-right.png);
 }
-

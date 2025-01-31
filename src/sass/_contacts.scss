@@ -18,7 +18,7 @@
   padding: 43px 20px;
   border-radius: 24px;
   background-color: $whiteColor;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 
 .contacts-subtitle {
@@ -41,86 +41,82 @@
   background-color: $greenBgColor;
 }
 
-
 .contacts-city {
-    font-family: $mainFontFamily;
+  font-family: $mainFontFamily;
   margin-bottom: 10px;
   color: $mainTextColor;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.8; 
+  line-height: 1.8;
   letter-spacing: 0.48px;
 }
 
-.contacts-desc{
-color: $secondaryTextColor;
-font-size: 12px;
-font-weight: 500;
-line-height: 1.5;
+.contacts-desc {
+  color: $secondaryTextColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.box-works{
+.box-works {
   position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
 
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $sectionBgColor;
+  }
 
-   &::before{
-  content: '';
-  display: block;
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $sectionBgColor;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $sectionBgColor;
+  }
 }
 
-  &::after{
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $sectionBgColor;
-}
-}
-
-.contacts-days{
+.contacts-days {
   font-family: $mainFontFamily;
-color: $mainTextColor;
-font-size: 12px;
-font-weight: 500;
-line-height: 1.8;
+  color: $mainTextColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
-
-.contacts-hours{
+.contacts-hours {
   color: $darkTitlePink;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.8;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
-.mr-bottom{
+.mr-bottom {
   margin-bottom: 10px;
 }
 
-
-.address-link{
+.address-link {
   color: $secondaryTextColor;
-font-size: 12px;
-font-weight: 500;
-line-height: 1.5;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.btn-wrapper{
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .contacts-location-btn,

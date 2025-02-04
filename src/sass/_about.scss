@@ -4,6 +4,14 @@
   padding-top: 125px;
   padding-bottom: 97px;
   background-color: #fff5f6;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 130px;
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 125px;
+  }
 }
 
 .about-container {
@@ -13,13 +21,38 @@
 }
 
 .about-img {
-  margin-bottom: 46px;
-  width: 280px;
-  height: 279px;
-  background-image: url(../images/about/about-bg-mob-1x.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  &::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 279px;
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 17px;
+
+    &::before {
+      width: 340px;
+      height: 339px;
+      background-image: url(../images/about/about-bg-tab-1x.png);
+    }
+  }
+  @media screen and (min-width: $bp-desktop) {
+     gap: 74px;
+    &::before {
+      width: 516px;
+      height: 516px;
+      background-image: url(../images/about/about-bg-desk-1x.png);
+    }
+  }
 }
+
 .about-subtitle {
   margin-bottom: 15px;
   text-align: center;
@@ -29,11 +62,18 @@
   line-height: 1.1;
   text-transform: uppercase;
   color: $darkTitlePink;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 16px;
+  }
 }
 
 .about-title {
-  width: 200px;
-  // margin: 0 auto;
   margin-bottom: 26px;
   color: $darkRed;
   text-align: center;
@@ -42,25 +82,47 @@
   line-height: 1.1;
   letter-spacing: 1.36px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 58px;
+    margin-bottom: 55px;
+    letter-spacing: 3.48px;
+  }
 }
 
-
+.wrapper-text {
+  width: 220px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: 50px;
+    width: 340px;
+  }
+}
 .about-text {
   margin-bottom: 46px;
-  width: 220px;
   color: $mainTextColor;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+  }
 }
 
-
 .about-desc {
-  width: 220px;
   color: $secondaryTextColor;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 14px;
+  }
 }
 
 .about-btn-read {
@@ -80,6 +142,12 @@
   &:focus {
     color: $btnBgHover;
   }
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+    margin-top: 62px;
+    margin-bottom: 66px;
+  }
 }
 
 .about-btn-icon {
@@ -89,12 +157,21 @@
   fill: transparent;
 }
 
+.about-list {
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 60px;
+  }
+}
 
-.about-item:not(:last-child){
-  margin-bottom: 38px;
+.about-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
 }
 
 .about-item-number {
+  display: inline-block;
   font-family: $secondaryFontFamily;
   font-size: 36px;
   font-weight: 400;
@@ -103,14 +180,26 @@
   text-transform: uppercase;
   color: $darkRed;
 
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+    margin-bottom: 13px;
+  }
+   @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 15px;
+  }
+
   &::before {
     content: '';
     display: block;
     margin-bottom: 16px;
     background-size: cover;
     background-repeat: no-repeat;
-  }
 
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 36px;
+    }
+  }
 }
 
 .item-1::before {
@@ -137,6 +226,8 @@
   font-weight: 700;
   line-height: 1.7;
   color: $mainTextColor;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 14px;
+  }
 }
-
-

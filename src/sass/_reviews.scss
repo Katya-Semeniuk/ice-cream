@@ -3,6 +3,14 @@
 .reviews {
   padding-top: 80px;
   padding-bottom: 86px;
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
 }
 
 .reviews-photo {
@@ -14,6 +22,12 @@
 
 // mob murkup
 
+.mob-screen {
+  margin-top: 29px;
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+}
 .mob-reviews-list {
   display: flex;
   flex-direction: column;
@@ -34,6 +48,11 @@
     left: 15px;
     background-image: url(../images/reviews/quotation-marks.png);
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -20px;
+      left: 30px;
+    }
   }
 }
 .mob-reviews-item {
@@ -42,7 +61,7 @@
   width: 180px;
 }
 
-.mob-reviews-text {
+.reviews-text {
   position: relative;
   z-index: 1;
   color: $mainTextColor;
@@ -50,29 +69,63 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 2;
+  }
 }
 
-.mob-location {
-    margin-top: 18px;
-    margin-bottom: 30px;
+.reviews-location {
+  margin-top: 18px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
   color: $mainTextColor;
+  @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+       margin-top: 14px;
+       margin-bottom: 35px;
+  }
 }
 
-
-.mob-btn{
-background-color: transparent;
-display: block;
-margin: 0 auto;
-margin-top: 30px;
-fill: $accentRed;
+.dots-btn {
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  fill: $accentRed;
+  @media screen and (min-width: $bp-tablet) {
+     margin-top: 52px;
+  }
 }
 
-.rewiews-dots-icon{
-    display: block;
-    margin: 0 auto;
-    fill: $accentRed;
+.rewiews-dots-icon {
+  display: block;
+  margin: 0 auto;
+  fill: $accentRed;
+}
+
+// tab screen
+
+.tab-screen {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.tab-reviews-list {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-reviews-item {
+  width: 500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $sectionBgColor;
 }

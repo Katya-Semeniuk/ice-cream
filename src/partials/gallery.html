@@ -1,4 +1,32 @@
 <section class="gallery">
- 
    <h2 class="visually-hidden">Gallery</h2>
+    <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/gallery-bg-desk-1x.jpg 1x,
+                      ./images/gallery/gallery-bg-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/gallery-bg-tab-1x.jpg 1x,
+                      ./images/gallery/gallery-bg-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/gallery-bg-mob-1x.jpg 1x,
+                      ./images/gallery/gallery-bg-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="gallery-img"
+                    src="./images/gallery/gallery-bg-mob-1x.jpg"
+                    alt="Відгуки"
+                    width="364"
+                  />
+                </picture>
 </section>

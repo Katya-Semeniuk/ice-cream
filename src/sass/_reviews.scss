@@ -53,6 +53,10 @@
       top: -20px;
       left: 30px;
     }
+    @media screen and (min-width: $bp-desktop) {
+      top: -20px;
+      left: 130px;
+    }
   }
 }
 .mob-reviews-item {
@@ -85,10 +89,15 @@
   font-weight: 500;
   line-height: 2;
   color: $mainTextColor;
+
   @media screen and (min-width: $bp-tablet) {
       font-size: 16px;
        margin-top: 14px;
        margin-bottom: 35px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+      font-size: 20px;
+      line-height: 1.8;
   }
 }
 
@@ -101,6 +110,9 @@
   @media screen and (min-width: $bp-tablet) {
      margin-top: 52px;
   }
+  @media screen and (min-width: $bp-desktop) {
+     margin-top: 15px;
+  }
 }
 
 .rewiews-dots-icon {
@@ -112,9 +124,9 @@
 // tab screen
 
 .tab-screen {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px), (min-width: 1200px) {
     display: none;
-  }
+}
 }
 .tab-reviews-list {
   margin-top: 66px;
@@ -128,4 +140,25 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid $sectionBgColor;
+}
+
+
+// desk screen
+.desk-screen {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.desk-reviews-list {
+  padding: 47px 80px;
+  background-color: #fafafa;
+}
+
+.desk-reviews-item {
+  width: 900px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $sectionBgColor;
+  letter-spacing: 0.64px;
 }
